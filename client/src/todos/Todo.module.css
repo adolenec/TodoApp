@@ -1,0 +1,29 @@
+.todo {
+  background: #f0f0f0;
+  border-radius: 0.75rem;
+  padding: 0.5rem 2rem;
+  color: rgb(100, 100, 100);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 50%;
+}
+
+.icon-container:hover {
+  background: #dcdcdc;
+}
+
+.name {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.due-date {
+  margin-bottom: 0;
+  font-size: 14px;
+}
