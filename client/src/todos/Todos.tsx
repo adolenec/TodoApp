@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-import { FaPlusCircle } from "react-icons/fa";
-import useGetTodos from "../hooks/TodoHooks";
 import Button from "../shared/Button";
 import Todo from "./Todo";
 import LoadingSpinner from "../shared/LoadingSpinner";
 import ApiError from "../shared/ApiError";
+import { useGetTodos } from "../hooks/TodoHooks";
+import { Link } from "react-router-dom";
+import { FaPlusCircle } from "react-icons/fa";
 
 const Todos = () => {
   const { data, isLoading, isError, error } = useGetTodos();
