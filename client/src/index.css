@@ -22,3 +22,7 @@ code {
   text-decoration: none;
   color: inherit;
 }
+
+.text {
+  color: rgb(100, 100, 100);
+}

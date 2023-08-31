@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <>
       <Header title="TodoApp" />
-      <div className="container">
+      <div className="container text">
         <Outlet />
       </div>
     </>
