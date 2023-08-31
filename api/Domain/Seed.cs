@@ -3,26 +3,26 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api.Domain
 {
-	public static class Seed
-	{
-		public static void SeedTodos(ModelBuilder builder)
-		{
-			builder.Entity<Todo>().HasData(new List<Todo>
-			{
-				new Todo
-				{
-					Id = 1,
-					Name = "Create React App",
-					Description = "Set up a new React application using Create React App with Typescript template.",
-					DueDate = new DateTime(2023, 8, 29)
-				},
-				new Todo
-				{
-					Id = 2,
-					Name = "Create minimal API",
-					Description =  "Use the .NET CLI to create a new minimal API project.",
-					DueDate = new DateTime(2023, 8, 30),
-				},
+    public static class Seed
+    {
+        public static void SeedTodos(ModelBuilder builder)
+        {
+            builder.Entity<Todo>().HasData(new List<Todo>
+            {
+                new Todo
+                {
+                    Id = 1,
+                    Name = "Create React App",
+                    Description = "Set up a new React application using Create React App with Typescript template.",
+                    DueDate = new DateTime(2023, 8, 29)
+                },
+                new Todo
+                {
+                    Id = 2,
+                    Name = "Create minimal API",
+                    Description =  "Use the .NET CLI to create a new minimal API project.",
+                    DueDate = new DateTime(2023, 8, 30),
+                },
                 new Todo
                 {
                     Id = 3,
@@ -30,7 +30,7 @@ namespace api.Domain
                     Description =  "Configure the database connection",
                     DueDate = new DateTime(2023, 8, 31),
                 },
-				new Todo
+                new Todo
                 {
                     Id = 4,
                     Name = "Database Migration",
@@ -66,7 +66,7 @@ namespace api.Domain
                     DueDate = new DateTime(2023, 9, 5),
                 },
             });
-		}
-	}
+        }
+    }
 }
 

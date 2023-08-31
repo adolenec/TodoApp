@@ -4,13 +4,13 @@ using Microsoft.Extensions.Options;
 
 namespace api.Domain
 {
-	public class TodoContext : DbContext
-	{
-		public TodoContext(DbContextOptions<TodoContext> options): base(options)
-		{
-		}
+    public class TodoContext : DbContext
+    {
+        public TodoContext(DbContextOptions<TodoContext> options) : base(options)
+        {
+        }
 
-		public DbSet<Todo> Todos => Set<Todo>();
+        public DbSet<Todo> Todos => Set<Todo>();
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

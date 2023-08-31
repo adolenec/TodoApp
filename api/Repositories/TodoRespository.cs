@@ -7,12 +7,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api.Repositories
 {
-	public class TodoRespository : ITodoRepository
-	{
+    public class TodoRespository : ITodoRepository
+    {
         private readonly TodoContext _context;
 
         public TodoRespository(TodoContext context)
-		{
+        {
             _context = context;
         }
 
@@ -74,6 +74,6 @@ namespace api.Repositories
             _context.Todos.Remove(todo);
             await _context.SaveChangesAsync();
         }
-	}
+    }
 }
 
